@@ -198,7 +198,7 @@ span{
 
     #trailer-container{
         width: 100%;
-        height: 400px;
+        height: 650px;
         display: flex;
         flex-direction: column;
     }
@@ -232,6 +232,67 @@ span{
     .cards-content{
         grid-template-columns: 1fr;
         margin-top: 150px;
+    }
+
+    @media(max-width: 500px){
+        header{
+            background-color: #1b1616;
+        }
+        .footer-navigation{
+            display: block;
+            margin-top: 20px;
+        }
+    
+        nav{
+            display: none;
+        }
+    
+        #banner{
+            background-position: 40%;
+            height: 400px;
+        }
+    
+        #trailer-container{
+            width: 100%;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .content{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+    
+        .trailer{
+            width: 100%;
+        }
+    
+        #sinopse{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        .description{
+            width: 100%;
+        }
+    
+        .button{
+            width: 100%;
+            margin-top: 40px;
+            background-color: #640707;
+            border-radius: 50px;
+            width: 350px;
+        }
+    
+        .cards-content{
+            grid-template-columns: 1fr;
+            margin-top: 150px;
+        }
     }
 }
 
